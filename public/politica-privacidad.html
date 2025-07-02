@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Energía Verde Wasabi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .legal-document {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #A8FF00 0%, #96E600 100%);
+            color: #1a1a1a;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(26,26,26,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 50px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #A8FF00 0%, #96E600 100%);
+            color: #1a1a1a;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(168, 255, 0, 0.3);
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(168, 255, 0, 0.4);
+        }
+        
+        .back-link::before {
+            content: '←';
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        h2 {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #A8FF00;
+            position: relative;
+        }
+        
+        h3 {
+            color: #2d3748;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 30px 0 15px 0;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #A8FF00 0%, #96E600 100%);
+            color: #1a1a1a;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(168, 255, 0, 0.2);
+        }
+        
+        .info-box {
+            background: #f7fafc;
+            border-left: 5px solid #A8FF00;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 15px 15px 0;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .contact-info h3 {
+            color: #A8FF00;
+            margin-bottom: 15px;
+        }
+        
+        .date-updated {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .footer-nav {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        .footer-nav a {
+            display: inline-block;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(26, 26, 26, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 30px 25px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="legal-document">
+            <div class="header">
+                <h1>Política de Privacidad</h1>
+                <div class="subtitle">Protección de Datos Personales - RGPD</div>
+            </div>
+            
+            <div class="content">
+                <a href="/" class="back-link">Volver a la web principal</a>
+                
+                <div class="date-updated">
+                    <strong>Última actualización:</strong> 1 de enero de 2025
+                </div>
+
+                <div class="highlight-box">
+                    <strong>🔒 Tu privacidad es nuestra prioridad.</strong> En Energía Verde Wasabi cumplimos estrictamente con el Reglamento General de Protección de Datos (RGPD) y la normativa española de protección de datos.
+                </div>
+
+                <h2>1. Responsable del Tratamiento</h2>
+                <div class="contact-info">
+                    <h3>Energía Verde Wasabi SL</h3>
+                    <p><strong>CIF:</strong> B12345678</p>
+                    <p><strong>Dirección:</strong> POLÍGONO CAMPOLLANO - CALLE A, 7. 02006, ALBACETE (ALBACETE), ESPAÑA</p>
+                    <p><strong>Teléfono:</strong> +34 621 50 83 00</p>
+                    <p><strong>Email:</strong> energiaverdewasabi@gmail.com</p>
+                    <p><strong>Delegado de Protección de Datos:</strong> energiaverdewasabi@gmail.com</p>
+                </div>
+
+                <h2>2. Información que Recopilamos</h2>
+                <p>Recopilamos diferentes tipos de información personal cuando utilizas nuestros servicios:</p>
+                
+                <h3>2.1 Datos de Identificación</h3>
+                <ul>
+                    <li><strong>Datos personales:</strong> Nombre completo, DNI/NIE, fecha de nacimiento</li>
+                    <li><strong>Datos de contacto:</strong> Dirección postal, teléfono, email</li>
+                    <li><strong>Datos bancarios:</strong> IBAN para domiciliación de pagos</li>
+                </ul>
+
+                <h3>2.2 Datos Comerciales</h3>
+                <ul>
+                    <li>Tipo de suministro energético contratado</li>
+                    <li>Consumos energéticos históricos</li>
+                    <li>Preferencias comerciales y comunicaciones</li>
+                    <li>Historial de consultas y reclamaciones</li>
+                </ul>
+
+                <h3>2.3 Datos Técnicos</h3>
+                <ul>
+                    <li>Dirección IP y datos de navegación</li>
+                    <li>Tipo de dispositivo y navegador</li>
+                    <li>Cookies y tecnologías similares</li>
+                    <li>Registros de actividad en la web</li>
+                </ul>
+
+                <h2>3. Finalidades del Tratamiento</h2>
+                <p>Utilizamos tus datos personales para las siguientes finalidades:</p>
+
+                <div class="info-box">
+                    <h3>3.1 Gestión Comercial</h3>
+                    <ul>
+                        <li>Gestionar y responder a consultas comerciales</li>
+                        <li>Elaborar presupuestos personalizados</li>
+                        <li>Realizar seguimiento comercial y postventa</li>
+                        <li>Envío de ofertas y promociones (con consentimiento)</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>3.2 Prestación de Servicios</h3>
+                    <ul>
+                        <li>Gestión de contratos de suministro energético</li>
+                        <li>Facturación y cobro de servicios</li>
+                        <li>Atención al cliente y resolución de incidencias</li>
+                        <li>Gestión de cambios de comercializadora</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>3.3 Cumplimiento Legal</h3>
+                    <ul>
+                        <li>Cumplimiento de obligaciones fiscales y contables</li>
+                        <li>Reporte a organismos reguladores (CNMC)</li>
+                        <li>Prevención de fraude y blanqueo de capitales</li>
+                        <li>Atención a requerimientos judiciales</li>
+                    </ul>
+                </div>
+
+                <h2>4. Base Legal del Tratamiento</h2>
+                <p>El tratamiento de tus datos se fundamenta en:</p>
+                <ul>
+                    <li><strong>Consentimiento explícito:</strong> Para comunicaciones comerciales y marketing</li>
+                    <li><strong>Ejecución contractual:</strong> Para la prestación de servicios energéticos</li>
+                    <li><strong>Interés legítimo:</strong> Para mejora de servicios y análisis comercial</li>
+                    <li><strong>Obligación legal:</strong> Para cumplimiento de normativa sectorial y fiscal</li>
+                </ul>
+
+                <h2>5. Conservación de Datos</h2>
+                <p>Conservaremos tus datos personales durante los siguientes períodos:</p>
+                
+                <div class="info-box">
+                    <ul>
+                        <li><strong>Consultas comerciales:</strong> 3 años desde el último contacto</li>
+                        <li><strong>Clientes activos:</strong> Durante la vigencia del contrato</li>
+                        <li><strong>Ex-clientes:</strong> 6 años tras finalización del contrato</li>
+                        <li><strong>Datos fiscales:</strong> 4 años según normativa fiscal española</li>
+                        <li><strong>Datos de navegación:</strong> Máximo 12 meses</li>
+                        <li><strong>Comunicaciones comerciales:</strong> Hasta revocación del consentimiento</li>
+                    </ul>
+                </div>
+
+                <h2>6. Destinatarios de los Datos</h2>
+                <p>Tus datos pueden ser compartidos con:</p>
+
+                <h3>6.1 Proveedores de Servicios</h3>
+                <ul>
+                    <li>Empresas de hosting y servicios tecnológicos</li>
+                    <li>Plataformas de email marketing y CRM</li>
+                    <li>Servicios de análisis web (Google Analytics)</li>
+                    <li>Proveedores de servicios de pago</li>
+                </ul>
+
+                <h3>6.2 Terceros Obligatorios</h3>
+                <ul>
+                    <li>Distribuidoras eléctricas y gasistas</li>
+                    <li>Operadores del sistema (REE, Enagás)</li>
+                    <li>Comisión Nacional de los Mercados y la Competencia (CNMC)</li>
+                    <li>Agencia Tributaria y organismos fiscales</li>
+                    <li>Autoridades judiciales cuando sea requerido</li>
+                </ul>
+
+                <h2>7. Transferencias Internacionales</h2>
+                <p>Algunos de nuestros proveedores pueden estar ubicados fuera del Espacio Económico Europeo. En estos casos garantizamos protección adecuada mediante:</p>
+                <ul>
+                    <li>Decisiones de adecuación de la Comisión Europea</li>
+                    <li>Cláusulas contractuales tipo aprobadas por la UE</li>
+                    <li>Certificaciones de privacidad reconocidas (Privacy Shield, etc.)</li>
+                    <li>Normas corporativas vinculantes</li>
+                </ul>
+
+                <h2>8. Derechos del Interesado</h2>
+                <div class="highlight-box">
+                    <strong>Tienes pleno control sobre tus datos personales.</strong> Puedes ejercer los siguientes derechos en cualquier momento:
+                </div>
+
+                <h3>8.1 Derecho de Acceso</h3>
+                <p>Conocer qué datos personales tenemos sobre ti, para qué los utilizamos y con quién los compartimos.</p>
+
+                <h3>8.2 Derecho de Rectificación</h3>
+                <p>Corregir datos inexactos o incompletos que tengamos sobre ti.</p>
+
+                <h3>8.3 Derecho de Supresión ("Derecho al Olvido")</h3>
+                <p>Solicitar la eliminación de tus datos cuando ya no sean necesarios o retires el consentimiento.</p>
+
+                <h3>8.4 Derecho de Limitación</h3>
+                <p>Restringir el tratamiento de tus datos en determinadas circunstancias.</p>
+
+                <h3>8.5 Derecho de Portabilidad</h3>
+                <p>Recibir tus datos en formato estructurado y transmitirlos a otro responsable.</p>
+
+                <h3>8.6 Derecho de Oposición</h3>
+                <p>Oponerte al tratamiento de tus datos por motivos relacionados con tu situación particular.</p>
+
+                <h3>8.7 Derecho de Revocación</h3>
+                <p>Retirar el consentimiento otorgado en cualquier momento.</p>
+
+                <h2>9. Cómo Ejercer tus Derechos</h2>
+                <div class="contact-info">
+                    <h3>Contacta con nosotros para ejercer tus derechos:</h3>
+                    <p><strong>📧 Email:</strong> energiaverdewasabi@gmail.com</p>
+                    <p><strong>📞 Teléfono:</strong> +34 621 50 83 00</p>
+                    <p><strong>📮 Correo postal:</strong> POLÍGONO CAMPOLLANO - CALLE A, 7. 02006, ALBACETE</p>
+                    <p><strong>⏱️ Plazo de respuesta:</strong> Máximo 1 mes desde la solicitud</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Documentación necesaria:</h3>
+                    <ul>
+                        <li>Solicitud clara del derecho que deseas ejercer</li>
+                        <li>Copia del DNI o documento identificativo</li>
+                        <li>Datos de contacto actualizados</li>
+                    </ul>
+                </div>
+
+                <h2>10. Medidas de Seguridad</h2>
+                <p>Implementamos medidas técnicas y organizativas de alto nivel para proteger tus datos:</p>
+
+                <h3>10.1 Medidas Técnicas</h3>
+                <ul>
+                    <li>Cifrado SSL/TLS en todas las comunicaciones</li>
+                    <li>Cifrado de datos en reposo</li>
+                    <li>Firewalls y sistemas de detección de intrusiones</li>
+                    <li>Copias de seguridad cifradas y regulares</li>
+                    <li>Autenticación multifactor</li>
+                </ul>
+
+                <h3>10.2 Medidas Organizativas</h3>
+                <ul>
+                    <li>Control de acceso basado en roles y necesidad</li>
+                    <li>Formación continua del personal en protección de datos</li>
+                    <li>Auditorías internas regulares</li>
+                    <li>Planes de respuesta ante incidentes</li>
+                    <li>Acuerdos de confidencialidad con empleados</li>
+                </ul>
+
+                <h2>11. Cookies y Tecnologías de Seguimiento</h2>
+                <p>Utilizamos cookies y tecnologías similares para mejorar tu experiencia de navegación. Para información detallada, consulta nuestra <a href="/cookies.html" style="color: #A8FF00; font-weight: bold;">Política de Cookies</a>.</p>
+
+                <h2>12. Menores de Edad</h2>
+                <div class="info-box">
+                    <p><strong>Protección especial:</strong> Nuestros servicios están dirigidos exclusivamente a mayores de 18 años. No recopilamos intencionadamente datos de menores de edad. Si detectamos datos de menores, los eliminaremos inmediatamente.</p>
+                </div>
+
+                <h2>13. Notificación de Brechas de Seguridad</h2>
+                <p>En caso de brecha de seguridad que pueda suponer un riesgo para tus derechos:</p>
+                <ul>
+                    <li>Notificaremos a la Agencia Española de Protección de Datos en 72 horas</li>
+                    <li>Te informaremos sin dilación indebida si existe alto riesgo</li>
+                    <li>Tomaremos medidas inmediatas para mitigar el impacto</li>
+                    <li>Investigaremos las causas y reforzaremos la seguridad</li>
+                </ul>
+
+                <h2>14. Reclamaciones ante la Autoridad de Control</h2>
+                <p>Si consideras que el tratamiento de tus datos no es conforme a la normativa, puedes presentar reclamación ante:</p>
+                
+                <div class="contact-info">
+                    <h3>Agencia Española de Protección de Datos (AEPD)</h3>
+                    <p><strong>🌐 Web:</strong> www.aepd.es</p>
+                    <p><strong>📞 Teléfono:</strong> 901 100 099</p>
+                    <p><strong>📮 Dirección:</strong> C/ Jorge Juan, 6. 28001 Madrid</p>
+                    <p><strong>📧 Sede electrónica:</strong> sedeagpd.gob.es</p>
+                </div>
+
+                <h2>15. Modificaciones de la Política</h2>
+                <p>Nos reservamos el derecho a modificar esta Política de Privacidad para adaptarla a:</p>
+                <ul>
+                    <li>Cambios en la normativa de protección de datos</li>
+                    <li>Nuevos servicios o funcionalidades</li>
+                    <li>Mejoras en las medidas de seguridad</li>
+                    <li>Recomendaciones de autoridades de control</li>
+                </ul>
+
+                <div class="info-box">
+                    <p><strong>Te notificaremos cualquier cambio significativo</strong> a través de nuestros canales habituales de comunicación con al menos 30 días de antelación.</p>
+                </div>
+
+                <h2>16. Contacto y Consultas</h2>
+                <p>Para cualquier consulta sobre esta Política de Privacidad o sobre el tratamiento de tus datos personales:</p>
+                
+                <div class="contact-info">
+                    <h3>Departamento de Protección de Datos</h3>
+                    <p><strong>📧 Email:</strong> energiaverdewasabi@gmail.com</p>
+                    <p><strong>📞 Teléfono:</strong> +34 621 50 83 00</p>
+                    <p><strong>🕐 Horario:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+                </div>
+
+                <div class="footer-nav">
+                    <a href="/">← Volver a la web principal</a>
+                    <a href="/aviso-legal.html">Aviso Legal</a>
+                    <a href="/terminos-condiciones.html">Términos y Condiciones</a>
+                    <a href="/cookies.html">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

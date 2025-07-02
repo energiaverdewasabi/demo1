@@ -1,0 +1,824 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== ULTRA-FAST PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Base optimizations */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive font scaling optimizado */
+@media (max-width: 640px) {
+  html { font-size: 14px; }
+}
+
+@media (min-width: 1024px) {
+  html { font-size: 16px; }
+}
+
+@media (min-width: 1280px) {
+  html { font-size: 18px; }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+  background-color: #2a2a2a; /* Fondo más claro */
+  color: #ffffff;
+}
+
+/* ===== FORMULARIOS CON TEXTO PERFECTAMENTE VISIBLE - ULTRA MEJORADO ===== */
+
+/* 🔥 SOLUCIÓN DEFINITIVA PARA MÓVILES - MÁXIMA PRIORIDAD CSS 🔥 */
+input, 
+textarea, 
+select,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"] {
+  /* COLORES ULTRA CONTRASTADOS CON MÁXIMA PRIORIDAD */
+  color: #000000 !important; /* Negro puro para máximo contraste */
+  background-color: #ffffff !important; /* Blanco puro */
+  background: #ffffff !important; /* Doble seguridad */
+  border: 3px solid #374151 !important; /* Borde más grueso y visible */
+  
+  /* TIPOGRAFÍA ULTRA OPTIMIZADA */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif !important;
+  font-size: 18px !important; /* Más grande para móvil */
+  font-weight: 600 !important; /* Más grueso para mejor visibilidad */
+  line-height: 1.4 !important;
+  
+  /* ESPACIADO ULTRA OPTIMIZADO PARA MÓVIL */
+  padding: 16px 20px !important; /* Más padding para móvil */
+  margin: 0 !important;
+  
+  /* BORDES Y SOMBRAS ULTRA VISIBLES */
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), inset 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  
+  /* TRANSICIONES OPTIMIZADAS */
+  transition: all 0.2s ease-in-out !important;
+  
+  /* ELIMINAR TODOS LOS ESTILOS DEL NAVEGADOR */
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  
+  /* OPTIMIZACIONES DE RENDERIZADO ULTRA MEJORADAS */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+  
+  /* FORZAR VISIBILIDAD EN TODOS LOS NAVEGADORES */
+  -webkit-text-fill-color: #000000 !important;
+  -webkit-background-clip: border-box !important;
+  
+  /* ELIMINAR ZOOM EN iOS */
+  transform-origin: left top !important;
+  
+  /* ASEGURAR VISIBILIDAD EN WEBKIT */
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
+/* 🚀 ESTADOS DE FOCUS ULTRA MEJORADOS PARA MÓVIL 🚀 */
+input:focus, 
+textarea:focus, 
+select:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus {
+  /* COLORES ULTRA CONTRASTADOS EN FOCUS */
+  color: #000000 !important; /* Negro absoluto */
+  background-color: #ffffff !important; /* Blanco absoluto */
+  background: #ffffff !important; /* Doble seguridad */
+  border-color: #A8FF00 !important; /* Verde brillante */
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(168, 255, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  transform: scale(1.02) !important; /* Ligero aumento para feedback visual */
+  
+  /* FORZAR VISIBILIDAD EN WEBKIT */
+  -webkit-text-fill-color: #000000 !important;
+}
+
+/* 🎯 ESTADOS DE HOVER ULTRA MEJORADOS 🎯 */
+input:hover:not(:focus), 
+textarea:hover:not(:focus), 
+select:hover:not(:focus) {
+  border-color: #6b7280 !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 💬 PLACEHOLDERS ULTRA VISIBLES 💬 */
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280 !important; /* Gris medio para contraste */
+  opacity: 1 !important;
+  font-weight: 500 !important;
+  font-style: italic !important;
+  -webkit-text-fill-color: #6b7280 !important;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #9ca3af !important; /* Más claro en focus */
+  opacity: 0.7 !important;
+}
+
+/* 📱 OPTIMIZACIONES ESPECÍFICAS PARA MÓVIL 📱 */
+@media (max-width: 768px) {
+  input, 
+  textarea, 
+  select {
+    /* TAMAÑOS ULTRA OPTIMIZADOS PARA MÓVIL */
+    font-size: 18px !important; /* Evita zoom automático en iOS */
+    padding: 18px 22px !important; /* Más padding para dedos */
+    min-height: 56px !important; /* Altura mínima para touch */
+    border-width: 3px !important; /* Bordes más gruesos */
+    
+    /* COLORES FORZADOS PARA MÓVIL */
+    color: #000000 !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    
+    /* SOMBRAS MÁS PRONUNCIADAS EN MÓVIL */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2), inset 0 1px 4px rgba(0, 0, 0, 0.1) !important;
+    
+    /* OPTIMIZACIONES DE RENDERIZADO MÓVIL */
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-text-fill-color: #000000 !important;
+    -webkit-opacity: 1 !important;
+    
+    /* ELIMINAR EFECTOS DE ZOOM */
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+  }
+  
+  /* FOCUS ESPECÍFICO PARA MÓVIL */
+  input:focus, 
+  textarea:focus, 
+  select:focus {
+    color: #000000 !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border-color: #A8FF00 !important;
+    box-shadow: 0 0 0 4px rgba(168, 255, 0, 0.5), 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+    -webkit-text-fill-color: #000000 !important;
+    transform: scale(1.03) !important; /* Más zoom en móvil */
+  }
+  
+  /* PLACEHOLDERS EN MÓVIL */
+  input::placeholder,
+  textarea::placeholder {
+    color: #6b7280 !important;
+    font-size: 16px !important;
+    -webkit-text-fill-color: #6b7280 !important;
+  }
+}
+
+/* 🔧 ESPECÍFICO PARA INPUTS CON ICONOS 🔧 */
+input[class*="pl-14"] {
+  padding-left: 60px !important; /* Más espacio para iconos */
+  color: #000000 !important;
+  background: #ffffff !important;
+}
+
+/* 🏷️ LABELS ULTRA LEGIBLES 🏷️ */
+label {
+  color: #1f2937 !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  margin-bottom: 8px !important;
+  display: block !important;
+  text-shadow: none !important;
+  line-height: 1.3 !important;
+}
+
+@media (max-width: 768px) {
+  label {
+    font-size: 20px !important; /* Más grande en móvil */
+    font-weight: 800 !important;
+    color: #111827 !important;
+  }
+}
+
+/* ✅ CHECKBOXES Y RADIOS ULTRA MEJORADOS ✅ */
+input[type="checkbox"],
+input[type="radio"] {
+  width: 22px !important;
+  height: 22px !important;
+  accent-color: #A8FF00 !important;
+  cursor: pointer !important;
+  margin-right: 12px !important;
+}
+
+@media (max-width: 768px) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 26px !important;
+    height: 26px !important;
+    margin-right: 16px !important;
+  }
+}
+
+/* 🚀 BOTONES DE FORMULARIO ULTRA MEJORADOS 🚀 */
+button[type="submit"] {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  padding: 18px 36px !important;
+  border-radius: 16px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  border: none !important;
+  min-height: 60px !important;
+}
+
+@media (max-width: 768px) {
+  button[type="submit"] {
+    font-size: 22px !important;
+    padding: 20px 40px !important;
+    min-height: 64px !important;
+    width: 100% !important;
+  }
+}
+
+/* ❌ MENSAJES DE ERROR ULTRA VISIBLES ❌ */
+.error-message {
+  color: #dc2626 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-top: 6px !important;
+  background-color: #fef2f2 !important;
+  padding: 10px 14px !important;
+  border-radius: 10px !important;
+  border-left: 4px solid #dc2626 !important;
+}
+
+@media (max-width: 768px) {
+  .error-message {
+    font-size: 18px !important;
+    padding: 12px 16px !important;
+  }
+}
+
+/* 📝 TEXTAREAS ESPECÍFICAS 📝 */
+textarea {
+  resize: vertical !important;
+  min-height: 120px !important;
+  max-height: 300px !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+}
+
+@media (max-width: 768px) {
+  textarea {
+    min-height: 140px !important;
+    font-size: 18px !important;
+  }
+}
+
+/* 🎨 SELECT MEJORADOS 🎨 */
+select {
+  cursor: pointer !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23374151' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m6 8 4 4 4-4'/%3e%3c/svg%3e") !important;
+  background-position: right 16px center !important;
+  background-repeat: no-repeat !important;
+  background-size: 20px !important;
+  padding-right: 50px !important;
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+/* 🌐 COMPATIBILIDAD CROSS-BROWSER ULTRA MEJORADA 🌐 */
+
+/* Firefox específico */
+@-moz-document url-prefix() {
+  input, textarea, select {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    -moz-appearance: none !important;
+  }
+}
+
+/* Safari específico */
+@supports (-webkit-appearance: none) {
+  input, textarea, select {
+    -webkit-appearance: none !important;
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
+}
+
+/* Chrome específico */
+@supports (-webkit-background-clip: text) {
+  input, textarea, select {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
+}
+
+/* Edge específico */
+@supports (-ms-ime-align: auto) {
+  input, textarea, select {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+}
+
+/* 🌙 FORZAR MODO CLARO EN FORMULARIOS 🌙 */
+@media (prefers-color-scheme: dark) {
+  input, textarea, select {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border-color: #374151 !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
+}
+
+/* 🎯 ESTADOS ESPECÍFICOS ULTRA MEJORADOS 🎯 */
+
+/* Estados disabled */
+input:disabled,
+textarea:disabled,
+select:disabled {
+  background-color: #f3f4f6 !important;
+  color: #6b7280 !important;
+  cursor: not-allowed !important;
+  opacity: 0.7 !important;
+  -webkit-text-fill-color: #6b7280 !important;
+}
+
+/* Validación visual */
+input:valid:not(:placeholder-shown) {
+  border-color: #10b981 !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: #ef4444 !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 🔒 INPUTS DE CONTRASEÑA 🔒 */
+input[type="password"] {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  -webkit-text-security: disc !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
+}
+
+/* 🔢 INPUTS NUMÉRICOS 🔢 */
+input[type="number"] {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  -moz-appearance: textfield !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+/* ===== RESTO DE ESTILOS ORIGINALES ===== */
+
+/* GPU ACCELERATION & PERFORMANCE */
+.will-change-transform {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Optimización de transiciones */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-fast {
+  transition-duration: 150ms;
+}
+
+.transition-normal {
+  transition-duration: 300ms;
+}
+
+.transition-slow {
+  transition-duration: 500ms;
+}
+
+/* SMOOTH SCROLL OPTIMIZATION */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* BACKDROP BLUR OPTIMIZATION */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: #3a3a3a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #a8ff00, #96e600);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #96e600, #7dd800);
+}
+
+/* OPTIMIZED ANIMATIONS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* UTILITY CLASSES */
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* OPTIMIZED GRADIENTS */
+.bg-hero-gradient {
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 50%, #2a2a2a 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #a8ff00 0%, #96e600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-animated {
+  background: linear-gradient(270deg, #a8ff00, #96e600, #7dd800, #a8ff00);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* FOCUS STATES FOR ACCESSIBILITY */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #a8ff00;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* MOBILE OPTIMIZATIONS */
+@media (max-width: 640px) {
+  /* Reduce motion on mobile for better performance */
+  .animate-pulse {
+    animation-duration: 3s;
+  }
+  
+  .animate-bounce {
+    animation-duration: 1.5s;
+  }
+  
+  .animate-spin {
+    animation-duration: 2s;
+  }
+  
+  /* Optimize touch targets */
+  button, 
+  a, 
+  input, 
+  textarea, 
+  select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improve text readability on mobile */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  p {
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+
+  /* Reduce blur effects on mobile for performance */
+  .backdrop-blur-xl {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}
+
+/* TABLET OPTIMIZATIONS */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .animate-pulse {
+    animation-duration: 2.5s;
+  }
+}
+
+/* REDUCE MOTION FOR ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .animate-pulse,
+  .animate-bounce,
+  .animate-spin,
+  .animate-ping {
+    animation: none !important;
+  }
+}
+
+/* HIGH CONTRAST MODE SUPPORT */
+@media (prefers-contrast: high) {
+  .bg-white\/10 {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .border-white\/20 {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .text-gray-300 {
+    color: #e5e5e5;
+  }
+
+  /* Formularios con alto contraste */
+  input, textarea, select {
+    border-width: 3px !important;
+    color: #000000 !important;
+    background-color: #ffffff !important;
+  }
+}
+
+/* PRINT STYLES */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  .bg-gradient-to-br,
+  .bg-gradient-to-r {
+    background: white !important;
+  }
+  
+  .text-white {
+    color: black !important;
+  }
+  
+  /* Hide non-essential elements when printing */
+  .animate-pulse,
+  .animate-bounce,
+  .animate-spin,
+  .animate-ping {
+    animation: none !important;
+  }
+}
+
+/* PERFORMANCE CRITICAL CLASSES */
+
+/* Contenedores optimizados */
+.container-optimized {
+  contain: layout style paint;
+}
+
+/* Imágenes optimizadas */
+.img-optimized {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px 200px;
+}
+
+/* Secciones con lazy loading */
+.section-lazy {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+/* LOADING STATES */
+.loading-skeleton {
+  background: linear-gradient(90deg, #3a3a3a 25%, #4a4a4a 50%, #3a3a3a 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* INTERSECTION OBSERVER OPTIMIZATIONS */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CRITICAL CSS INLINED */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 50%, #2a2a2a 100%);
+}
+
+/* FONT LOADING OPTIMIZATION */
+@font-face {
+  font-family: 'System';
+  src: local('system-ui'), local('-apple-system'), local('BlinkMacSystemFont');
+  font-display: swap;
+}
+
+/* CRITICAL ABOVE-THE-FOLD STYLES */
+.above-fold {
+  contain: layout style paint;
+  will-change: transform;
+}
+
+/* OPTIMIZED HOVER STATES */
+@media (hover: hover) and (pointer: fine) {
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 20px rgba(168, 255, 0, 0.3);
+  }
+}
+
+/* CONTENT VISIBILITY OPTIMIZATION */
+.content-auto {
+  content-visibility: auto;
+}
+
+.content-hidden {
+  content-visibility: hidden;
+}
+
+/* FINAL PERFORMANCE TWEAKS */
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Optimización de renderizado de texto */
+.text-render-optimized {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optimización de capas de composición */
+.layer-optimized {
+  transform: translateZ(0);
+  will-change: transform;
+}

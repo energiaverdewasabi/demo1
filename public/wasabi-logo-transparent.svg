@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" style="background: transparent;">
+  <defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A8FF00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#96E600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7DD800;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- WASABI text -->
+  <text x="20" y="70" font-family="Arial Black, sans-serif" font-size="48" font-weight="900" fill="url(#greenGradient)" letter-spacing="2px">WASABI</text>
+  
+  <!-- ENERGÍA VERDE text -->
+  <text x="20" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2D5016" letter-spacing="1px">ENERGÍA VERDE</text>
+  
+  <!-- Leaf icon -->
+  <path d="M350 25 C360 15, 375 15, 385 25 C390 35, 385 45, 375 50 C365 45, 355 35, 350 25 Z" fill="#2D5016"/>
+  <path d="M355 30 C365 20, 380 20, 390 30 C395 40, 390 50, 380 55 C370 50, 360 40, 355 30 Z" fill="url(#greenGradient)"/>
+</svg>

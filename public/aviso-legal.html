@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso Legal - Energía Verde Wasabi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .legal-document {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            position: relative;
+            z-index: 1;
+            color: #A8FF00;
+        }
+        
+        .content {
+            padding: 50px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            background: linear-gradient(135deg, #A8FF00 0%, #96E600 100%);
+            color: #1a1a1a;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(168, 255, 0, 0.3);
+        }
+        
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(168, 255, 0, 0.4);
+        }
+        
+        .back-link::before {
+            content: '←';
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        h2 {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #A8FF00;
+            position: relative;
+        }
+        
+        h3 {
+            color: #2d3748;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 30px 0 15px 0;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(26, 26, 26, 0.2);
+        }
+        
+        .info-box {
+            background: #f7fafc;
+            border-left: 5px solid #A8FF00;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 15px 15px 0;
+        }
+        
+        .company-info {
+            background: linear-gradient(135deg, #A8FF00 0%, #96E600 100%);
+            color: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            font-weight: 600;
+        }
+        
+        .company-info h3 {
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+        
+        .date-updated {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .footer-nav {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+        }
+        
+        .footer-nav a {
+            display: inline-block;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-nav a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(26, 26, 26, 0.3);
+        }
+        
+        .legal-section {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 30px 25px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="legal-document">
+            <div class="header">
+                <h1>Aviso Legal</h1>
+                <div class="subtitle">Información Legal y Condiciones de Uso</div>
+            </div>
+            
+            <div class="content">
+                <a href="/" class="back-link">Volver a la web principal</a>
+                
+                <div class="date-updated">
+                    <strong>Última actualización:</strong> 1 de enero de 2025
+                </div>
+
+                <div class="highlight-box">
+                    <strong>⚖️ Información legal obligatoria</strong> según la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE).
+                </div>
+
+                <h2>1. Datos Identificativos del Titular</h2>
+                <div class="company-info">
+                    <h3>🏢 Energía Verde Wasabi SL</h3>
+                    <p><strong>CIF:</strong> B12345678</p>
+                    <p><strong>Domicilio Social:</strong> POLÍGONO CAMPOLLANO - CALLE A, 7. 02006, ALBACETE (ALBACETE), ESPAÑA</p>
+                    <p><strong>Teléfono:</strong> +34 621 50 83 00</p>
+                    <p><strong>Email:</strong> energiaverdewasabi@gmail.com</p>
+                    <p><strong>Sitio Web:</strong> energiaverdewasabi.com</p>
+                </div>
+
+                <div class="legal-section">
+                    <h3>📋 Datos Registrales</h3>
+                    <ul>
+                        <li><strong>Registro Mercantil:</strong> Inscrita en el Registro Mercantil de Albacete</li>
+                        <li><strong>Tomo:</strong> [Número de Tomo]</li>
+                        <li><strong>Libro:</strong> [Número de Libro]</li>
+                        <li><strong>Folio:</strong> [Número de Folio]</li>
+                        <li><strong>Hoja:</strong> [Número de Hoja]</li>
+                        <li><strong>Inscripción:</strong> [Número de Inscripción]</li>
+                    </ul>
+                </div>
+
+                <div class="legal-section">
+                    <h3>⚡ Actividad Empresarial</h3>
+                    <ul>
+                        <li><strong>Objeto Social:</strong> Comercialización de energía eléctrica y gas natural</li>
+                        <li><strong>CNAE:</strong> 3513 - Distribución de energía eléctrica</li>
+                        <li><strong>Autorización CNMC:</strong> [Número de autorización]</li>
+                        <li><strong>Código CUPS:</strong> Gestión autorizada</li>
+                    </ul>
+                </div>
+
+                <h2>2. Objeto del Sitio Web</h2>
+                <p>El presente aviso legal regula el uso del sitio web <strong>energiaverdewasabi.com</strong> (en adelante, "la web"), del que es titular Energía Verde Wasabi SL.</p>
+                
+                <div class="info-box">
+                    <p><strong>Finalidad del sitio web:</strong> Proporcionar información sobre nuestros servicios de suministro energético, facilitar la contratación online y ofrecer atención al cliente digital.</p>
+                </div>
+
+                <p>La utilización de la web atribuye la condición de usuario de la misma e implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal en la versión publicada en el momento en que el usuario acceda a la misma.</p>
+
+                <h2>3. Condiciones de Acceso y Uso</h2>
+                
+                <h3>3.1 Condiciones Generales</h3>
+                <p>El acceso y uso de esta web se rige por la legalidad vigente y por el principio de buena fe, comprometiéndose el usuario a realizar un uso adecuado de la web conforme a la ley, la moral, las buenas costumbres y el orden público.</p>
+
+                <h3>3.2 Usos Prohibidos</h3>
+                <div class="info-box">
+                    <p><strong>Queda expresamente prohibido:</strong></p>
+                    <ul>
+                        <li>Realizar actividades ilícitas, fraudulentas o que infrinjan derechos de terceros</li>
+                        <li>Transmitir o difundir contenidos que sean violentos, obscenos, abusivos, discriminatorios o ilícitos</li>
+                        <li>Introducir virus informáticos o realizar acciones que puedan alterar, dañar o inutilizar los sistemas</li>
+                        <li>Intentar acceder a áreas restringidas de los sistemas informáticos</li>
+                        <li>Utilizar la web para enviar comunicaciones comerciales no solicitadas</li>
+                    </ul>
+                </div>
+
+                <h3>3.3 Responsabilidad del Usuario</h3>
+                <p>El usuario será responsable de los daños y perjuicios de toda naturaleza que puedan derivarse del incumplimiento de estas obligaciones.</p>
+
+                <h2>4. Contenidos del Sitio Web</h2>
+                
+                <h3>4.1 Información General</h3>
+                <p>Los contenidos de esta web tienen carácter meramente informativo sobre nuestros servicios de suministro energético. La información proporcionada se actualiza periódicamente, pero puede no reflejar el estado actual en tiempo real.</p>
+
+                <h3>4.2 Exactitud de la Información</h3>
+                <div class="info-box">
+                    <p><strong>Energía Verde Wasabi SL se esfuerza por mantener la información actualizada y precisa, pero:</strong></p>
+                    <ul>
+                        <li>No garantiza la exactitud, completitud o actualidad de los contenidos</li>
+                        <li>Se reserva el derecho a modificar, actualizar o eliminar información sin previo aviso</li>
+                        <li>Las condiciones definitivas se establecerán en el contrato correspondiente</li>
+                    </ul>
+                </div>
+
+                <h3>4.3 Precios y Ofertas</h3>
+                <p>Los precios mostrados en la web son orientativos y pueden variar según las condiciones del mercado energético. Las ofertas están sujetas a disponibilidad y condiciones específicas que se detallarán en el momento de la contratación.</p>
+
+                <h2>5. Exclusión de Responsabilidades</h2>
+                
+                <div class="highlight-box">
+                    <strong>⚠️ Limitación de Responsabilidad:</strong> Energía Verde Wasabi SL excluye cualquier responsabilidad por los daños y perjuicios de toda naturaleza que puedan deberse a:
+                </div>
+
+                <h3>5.1 Disponibilidad del Servicio</h3>
+                <ul>
+                    <li>La falta de disponibilidad, continuidad o calidad del funcionamiento de la web</li>
+                    <li>Interrupciones, suspensiones o desconexiones del servicio</li>
+                    <li>Fallos en el acceso a las distintas páginas web o a aquéllas desde las que se preste el servicio</li>
+                </ul>
+
+                <h3>5.2 Contenidos</h3>
+                <ul>
+                    <li>La presencia de errores en los contenidos</li>
+                    <li>La falta de actualidad de los contenidos</li>
+                    <li>La existencia de elementos lesivos, virus o cualquier otro elemento en los contenidos</li>
+                </ul>
+
+                <h3>5.3 Uso Indebido</h3>
+                <ul>
+                    <li>El uso ilícito o incorrecto de la web por parte de los usuarios</li>
+                    <li>Los daños causados por terceros mediante intromisiones ilegítimas fuera del control de Energía Verde Wasabi SL</li>
+                </ul>
+
+                <h2>6. Propiedad Intelectual e Industrial</h2>
+                
+                <h3>6.1 Derechos de Propiedad</h3>
+                <p>Todos los contenidos del sitio web, incluyendo pero no limitándose a textos, fotografías, gráficos, imágenes, iconos, tecnología, software, diseño gráfico y códigos fuente, constituyen una obra cuya propiedad pertenece a Energía Verde Wasabi SL o a terceros que han autorizado su uso.</p>
+
+                <h3>6.2 Restricciones de Uso</h3>
+                <div class="info-box">
+                    <p><strong>Queda expresamente prohibido:</strong></p>
+                    <ul>
+                        <li>La reproducción, distribución, comunicación pública o transformación de los contenidos</li>
+                        <li>La extracción o reutilización de todo o parte sustancial de los contenidos</li>
+                        <li>El uso comercial de los contenidos sin autorización expresa</li>
+                        <li>La modificación, alteración o descompilación de los contenidos</li>
+                    </ul>
+                </div>
+
+                <h3>6.3 Marcas y Signos Distintivos</h3>
+                <p>Las marcas, nombres comerciales o signos distintivos son titularidad de Energía Verde Wasabi SL o de terceros, sin que pueda entenderse que el acceso a la web atribuya ningún derecho sobre las mismas.</p>
+
+                <h2>7. Enlaces a Terceros</h2>
+                
+                <h3>7.1 Enlaces Salientes</h3>
+                <p>En el caso de que en la web se dispusiesen enlaces hacia otros sitios web, Energía Verde Wasabi SL no ejercerá ningún tipo de control sobre dichos sitios y contenidos.</p>
+
+                <div class="info-box">
+                    <p><strong>Energía Verde Wasabi SL no asume responsabilidad alguna por:</strong></p>
+                    <ul>
+                        <li>Los contenidos de sitios web enlazados</li>
+                        <li>La disponibilidad de dichos sitios</li>
+                        <li>Los servicios prestados a través de los mismos</li>
+                        <li>La información, archivos o cualquier otro contenido existente en los mismos</li>
+                    </ul>
+                </div>
+
+                <h3>7.2 Enlaces Entrantes</h3>
+                <p>Los enlaces a nuestro sitio web desde sitios externos requieren autorización previa. El establecimiento de enlaces no autorizados no implica ningún tipo de relación entre Energía Verde Wasabi SL y el titular del sitio web desde el que se realice.</p>
+
+                <h2>8. Protección de Datos Personales</h2>
+                <p>El tratamiento de los datos personales que se realice a través de esta web se regirá por lo establecido en nuestra <a href="/politica-privacidad.html" style="color: #A8FF00; font-weight: bold;">Política de Privacidad</a>, en cumplimiento del Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+
+                <h2>9. Política de Cookies</h2>
+                <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario y proporcionar funcionalidades adicionales. Para información detallada sobre el uso de cookies, consulte nuestra <a href="/cookies.html" style="color: #A8FF00; font-weight: bold;">Política de Cookies</a>.</p>
+
+                <h2>10. Normativa del Sector Energético</h2>
+                
+                <div class="legal-section">
+                    <h3>⚡ Marco Regulatorio</h3>
+                    <p>Energía Verde Wasabi SL desarrolla su actividad en el marco de la normativa del sector energético español:</p>
+                    <ul>
+                        <li><strong>Ley 24/2013, de 26 de diciembre,</strong> del Sector Eléctrico</li>
+                        <li><strong>Ley 34/1998, de 7 de octubre,</strong> del Sector de Hidrocarburos</li>
+                        <li><strong>Real Decreto 1955/2000,</strong> regulador de actividades de gas natural</li>
+                        <li><strong>Normativa de la CNMC</strong> (Comisión Nacional de los Mercados y la Competencia)</li>
+                        <li><strong>Código Técnico del Sistema Gasista</strong></li>
+                        <li><strong>Procedimientos de Operación del Sistema Eléctrico</strong></li>
+                    </ul>
+                </div>
+
+                <h3>10.1 Autorización de Actividad</h3>
+                <p>Energía Verde Wasabi SL está debidamente autorizada para el ejercicio de la actividad de comercialización de energía eléctrica y gas natural, cumpliendo con todos los requisitos establecidos por la normativa sectorial vigente.</p>
+
+                <h3>10.2 Derechos de los Consumidores</h3>
+                <div class="info-box">
+                    <p><strong>Como consumidor energético, tienes derecho a:</strong></p>
+                    <ul>
+                        <li>Recibir suministro energético en condiciones de calidad</li>
+                        <li>Información clara y transparente sobre precios y condiciones</li>
+                        <li>Cambiar de comercializadora sin penalizaciones</li>
+                        <li>Presentar reclamaciones ante organismos competentes</li>
+                        <li>Acceder a mecanismos de resolución de conflictos</li>
+                    </ul>
+                </div>
+
+                <h2>11. Información Comercial y Publicitaria</h2>
+                
+                <h3>11.1 Veracidad de la Información</h3>
+                <p>Toda la información comercial proporcionada en esta web sobre nuestros servicios energéticos es veraz y se ajusta a la realidad de nuestras ofertas comerciales.</p>
+
+                <h3>11.2 Condiciones Contractuales</h3>
+                <p>Las condiciones definitivas de suministro se establecerán en el contrato correspondiente, que prevalecerá sobre cualquier información contenida en la web en caso de discrepancia.</p>
+
+                <h3>11.3 Ofertas y Promociones</h3>
+                <div class="info-box">
+                    <p><strong>Las ofertas y promociones publicadas:</strong></p>
+                    <ul>
+                        <li>Están sujetas a disponibilidad y condiciones específicas</li>
+                        <li>Pueden tener limitaciones temporales o geográficas</li>
+                        <li>Se detallarán completamente en el momento de la contratación</li>
+                        <li>Pueden ser modificadas o retiradas sin previo aviso</li>
+                    </ul>
+                </div>
+
+                <h2>12. Modificaciones del Aviso Legal</h2>
+                <p>Energía Verde Wasabi SL se reserva el derecho de realizar modificaciones en este Aviso Legal sin previo aviso, en función de:</p>
+                <ul>
+                    <li>Cambios en la legislación aplicable</li>
+                    <li>Modificaciones en los servicios ofrecidos</li>
+                    <li>Mejoras en las condiciones de uso</li>
+                    <li>Adaptaciones técnicas o comerciales</li>
+                </ul>
+
+                <div class="info-box">
+                    <p><strong>Las modificaciones serán válidas desde su publicación en la web.</strong> Se recomienda revisar periódicamente este aviso legal para estar informado de posibles cambios.</p>
+                </div>
+
+                <h2>13. Legislación Aplicable y Jurisdicción</h2>
+                
+                <h3>13.1 Ley Aplicable</h3>
+                <p>Las presentes condiciones se rigen por la legislación española, específicamente:</p>
+                <ul>
+                    <li>Ley 34/2002, de Servicios de la Sociedad de la Información</li>
+                    <li>Código Civil español</li>
+                    <li>Ley General para la Defensa de Consumidores y Usuarios</li>
+                    <li>Normativa sectorial energética</li>
+                </ul>
+
+                <h3>13.2 Jurisdicción Competente</h3>
+                <div class="highlight-box">
+                    <strong>⚖️ Resolución de Conflictos:</strong> Para la resolución de cualquier controversia que pudiera derivarse del acceso o uso de la web, las partes se someten expresamente a la jurisdicción de los Juzgados y Tribunales de Albacete, renunciando expresamente a cualquier otro fuero que pudiera corresponderles.
+                </div>
+
+                <h3>13.3 Mediación y Arbitraje</h3>
+                <p>Sin perjuicio de lo anterior, las partes podrán someter sus controversias a mediación o arbitraje de consumo, conforme a la normativa vigente en materia de resolución alternativa de conflictos.</p>
+
+                <h2>14. Contacto</h2>
+                <p>Para cualquier consulta, sugerencia o reclamación relacionada con este Aviso Legal o con el uso de la web, puede contactarnos a través de:</p>
+                
+                <div class="company-info">
+                    <h3>📞 Información de Contacto</h3>
+                    <p><strong>📧 Email:</strong> energiaverdewasabi@gmail.com</p>
+                    <p><strong>📞 Teléfono:</strong> +34 621 50 83 00</p>
+                    <p><strong>📮 Dirección postal:</strong> POLÍGONO CAMPOLLANO - CALLE A, 7. 02006, ALBACETE (ALBACETE), ESPAÑA</p>
+                    <p><strong>🕐 Horario de atención:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+                </div>
+
+                <h2>15. Disposiciones Finales</h2>
+                
+                <h3>15.1 Nulidad Parcial</h3>
+                <p>Si cualquier disposición de este Aviso Legal fuera declarada nula o ineficaz por resolución firme dictada por autoridad competente, las restantes disposiciones continuarán vigentes sin que queden afectadas por dicha declaración de nulidad.</p>
+
+                <h3>15.2 Renuncia</h3>
+                <p>La falta de ejercicio por parte de Energía Verde Wasabi SL de cualquier derecho derivado de este Aviso Legal no constituirá renuncia al mismo, salvo reconocimiento y acuerdo expreso por nuestra parte.</p>
+
+                <h3>15.3 Integridad del Acuerdo</h3>
+                <p>Este Aviso Legal constituye el acuerdo completo entre el usuario y Energía Verde Wasabi SL en relación con el uso de la web, y sustituye cualquier acuerdo anterior sobre la misma materia.</p>
+
+                <div class="footer-nav">
+                    <a href="/">← Volver a la web principal</a>
+                    <a href="/politica-privacidad.html">Política de Privacidad</a>
+                    <a href="/terminos-condiciones.html">Términos y Condiciones</a>
+                    <a href="/cookies.html">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

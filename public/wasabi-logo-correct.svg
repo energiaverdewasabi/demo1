@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9ACD32;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7CB342;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#689F38;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="darkGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1B5E20;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- WASABI text -->
+  <g fill="url(#greenGradient)">
+    <!-- W -->
+    <path d="M0 150 L60 150 L90 350 L120 150 L180 150 L210 350 L240 150 L300 150 L240 450 L180 450 L150 250 L120 450 L60 450 Z"/>
+    
+    <!-- A -->
+    <path d="M320 450 L380 450 L390 400 L450 400 L460 450 L520 450 L470 150 L370 150 Z M400 320 L440 320 L420 250 Z"/>
+    
+    <!-- S -->
+    <path d="M540 450 C540 450 540 380 540 350 C540 320 570 290 600 290 L650 290 C680 290 710 260 710 230 C710 200 680 170 650 170 L580 170 L580 120 L650 120 C710 120 760 170 760 230 C760 290 710 340 650 340 L600 340 C570 340 540 370 540 400 L540 450 L760 450 L760 500 L540 500 Z"/>
+    
+    <!-- A -->
+    <path d="M780 450 L840 450 L850 400 L910 400 L920 450 L980 450 L930 150 L830 150 Z M860 320 L900 320 L880 250 Z"/>
+    
+    <!-- B -->
+    <path d="M1000 150 L1000 450 L1150 450 C1180 450 1210 420 1210 390 C1210 370 1200 350 1180 340 C1200 330 1210 310 1210 290 C1210 260 1180 230 1150 230 L1000 230 Z M1060 280 L1120 280 C1135 280 1150 295 1150 310 C1150 325 1135 340 1120 340 L1060 340 Z M1060 380 L1130 380 C1145 380 1160 395 1160 410 C1160 425 1145 440 1130 440 L1060 440 Z"/>
+    
+    <!-- I -->
+    <path d="M1230 150 L1230 450 L1290 450 L1290 150 Z"/>
+  </g>
+  
+  <!-- ENERGÍA VERDE text -->
+  <g fill="url(#darkGreen)" font-family="Arial, sans-serif" font-weight="bold" font-size="48">
+    <text x="450" y="520" text-anchor="middle">ENERGÍA VERDE</text>
+  </g>
+  
+  <!-- Small leaf decoration -->
+  <g fill="url(#darkGreen)">
+    <path d="M950 480 C960 470 970 475 975 485 C980 495 975 505 965 510 C955 505 950 495 950 485 Z"/>
+    <path d="M980 485 C990 475 1000 480 1005 490 C1010 500 1005 510 995 515 C985 510 980 500 980 490 Z"/>
+  </g>
+</svg>

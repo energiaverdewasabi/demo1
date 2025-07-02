@@ -1,0 +1,46 @@
+<svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8FF00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#96E600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7DD800;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background circle with gradient -->
+  <circle cx="100" cy="40" r="32" fill="url(#logoGradient)" filter="url(#shadow)" opacity="0.9"/>
+  
+  <!-- Light bulb outline -->
+  <path d="M85 25 C85 15, 95 10, 100 10 C105 10, 115 15, 115 25 C115 35, 110 40, 110 45 L90 45 C90 40, 85 35, 85 25 Z" 
+        fill="none" stroke="#1A1A1A" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Light bulb base -->
+  <rect x="92" y="45" width="16" height="8" rx="2" fill="#1A1A1A" filter="url(#shadow)"/>
+  <rect x="94" y="53" width="12" height="4" rx="1" fill="#1A1A1A"/>
+  
+  <!-- Lightning bolt inside bulb -->
+  <path d="M105 20 L95 30 L100 30 L95 40 L105 30 L100 30 Z" 
+        fill="#1A1A1A" filter="url(#glow)"/>
+  
+  <!-- Leaf elements around the bulb -->
+  <path d="M75 35 Q70 30, 75 25 Q80 30, 75 35" fill="url(#logoGradient)" opacity="0.8"/>
+  <path d="M125 35 Q130 30, 125 25 Q120 30, 125 35" fill="url(#logoGradient)" opacity="0.8"/>
+  
+  <!-- Energy waves -->
+  <circle cx="100" cy="40" r="40" fill="none" stroke="url(#logoGradient)" stroke-width="2" opacity="0.3"/>
+  <circle cx="100" cy="40" r="45" fill="none" stroke="url(#logoGradient)" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Company name -->
+  <text x="100" y="85" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1A1A1A">energía</text>
+  <text x="100" y="105" font-family="Arial, sans-serif" font-size="24" font-weight="900" text-anchor="middle" fill="url(#logoGradient)" filter="url(#glow)">WASABI</text>
+</svg>

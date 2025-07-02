@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/WhatsApp_Image_2025-06-26_at_19.55.53__1_-removebg-preview copy copy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Energía Verde Wasabi - Energía 100% renovable sin trampas. Hasta 120€ al año por cambiarte. Precios justos, atención humana. ¡Cambia ya!" />
+    <meta name="keywords" content="energía renovable, luz verde, gas natural, ahorro energético, sin permanencia, precios justos" />
+    <meta name="author" content="Energía Verde Wasabi" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Energía Verde Wasabi - Energía Renovable Sin Trampas" />
+    <meta property="og:description" content="Energía 100% renovable, sin trampas, sin robots. Hasta 120€ al año por cambiarte. ¡Descubre la diferencia!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://energiaverdewasabi.com" />
+    <meta property="og:image" content="/WhatsApp_Image_2025-06-26_at_19.55.53__1_-removebg-preview copy copy.png" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Energía Verde Wasabi - Energía Renovable Sin Trampas" />
+    <meta name="twitter:description" content="Energía 100% renovable, sin trampas, sin robots. Hasta 120€ al año por cambiarte." />
+    <meta name="twitter:image" content="/WhatsApp_Image_2025-06-26_at_19.55.53__1_-removebg-preview copy copy.png" />
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/WhatsApp_Image_2025-06-26_at_19.55.53__1_-removebg-preview copy copy.png" as="image" type="image/png">
+    
+    <!-- Critical CSS inlined for fastest loading -->
+    <style>
+      /* Critical above-the-fold styles */
+      html { 
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+      }
+      body { 
+        margin: 0; 
+        padding: 0; 
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #a8ff00;
+        border-top: 4px solid transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    
+    <title>Energía Verde Wasabi - Energía Renovable Sin Trampas</title>
+  </head>
+  <body>
+    <!-- Loading screen for better UX -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loading-spinner"></div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <!-- Remove loading screen when app loads -->
+    <script>
+      window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          setTimeout(() => {
+            loadingScreen.style.opacity = '0';
+            setTimeout(() => {
+              loadingScreen.remove();
+            }, 500);
+          }, 500);
+        }
+      });
+    </script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

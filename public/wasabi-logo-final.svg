@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" style="background: transparent;">
+  <!-- W grande -->
+  <path d="M10 20 L35 100 L50 60 L65 100 L90 20 L70 20 L55 75 L45 45 L35 75 L30 20 Z" fill="#A8FF00"/>
+  
+  <!-- ASABI -->
+  <text x="110" y="85" font-family="Arial Black, sans-serif" font-size="48" font-weight="900" fill="#A8FF00">ASABI</text>
+  
+  <!-- ENERGÍA VERDE -->
+  <text x="110" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2D5016">ENERGÍA VERDE</text>
+  
+  <!-- Hojas decorativas -->
+  <path d="M420 95 Q430 85 440 95 Q430 105 420 95" fill="#2D5016"/>
+  <path d="M445 90 Q455 80 465 90 Q455 100 445 90" fill="#2D5016"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <!-- Fondo transparente -->
+  <rect width="1000" height="600" fill="none"/>
+  
+  <!-- Logo W grande en verde -->
+  <g transform="translate(50, 50)">
+    <!-- Letra W principal -->
+    <path d="M0 50 L80 450 L160 200 L240 450 L320 50 L280 50 L220 350 L160 120 L100 350 L40 50 Z" 
+          fill="#A8FF00" 
+          stroke="none"/>
+    
+    <!-- Letra A -->
+    <path d="M380 450 L420 350 L480 350 L520 450 L480 450 L470 420 L430 420 L420 450 Z M440 300 L460 300 L450 280 Z" 
+          fill="#A8FF00" 
+          stroke="none"/>
+    
+    <!-- Letra S -->
+    <path d="M580 450 C560 450 540 430 540 410 L540 400 L580 400 L580 410 C580 415 585 420 590 420 L630 420 C650 420 670 400 670 380 C670 360 650 340 630 340 L590 340 C570 340 550 320 550 300 C550 280 570 260 590 260 L630 260 C650 260 670 280 670 300 L670 310 L630 310 L630 300 C630 295 625 290 620 290 L590 290 C585 290 580 295 580 300 C580 305 585 310 590 310 L630 310 C650 310 670 330 670 350 C670 370 650 390 630 390 L590 390 C570 390 550 370 550 350" 
+          fill="#A8FF00" 
+          stroke="none"/>
+    
+    <!-- Letra A -->
+    <path d="M730 450 L770 350 L830 350 L870 450 L830 450 L820 420 L780 420 L770 450 Z M790 300 L810 300 L800 280 Z" 
+          fill="#A8FF00" 
+          stroke="none"/>
+    
+    <!-- Letra B -->
+    <path d="M930 450 L930 260 L980 260 C1000 260 1020 280 1020 300 C1020 310 1015 320 1010 325 C1015 330 1020 340 1020 350 C1020 370 1000 390 980 390 L970 390 L970 450 Z M970 290 L970 320 L980 320 C985 320 990 315 990 310 C990 305 985 300 980 300 L970 300 Z M970 350 L970 390 L980 390 C985 390 990 385 990 380 C990 375 985 370 980 370 L970 370 Z" 
+          fill="#A8FF00" 
+          stroke="none"/>
+    
+    <!-- Letra I -->
+    <path d="M1080 450 L1080 260 L1120 260 L1120 450 Z" 
+          fill="#A8FF00" 
+          stroke="none"/>
+  </g>
+  
+  <!-- Texto "ENERGÍA VERDE" en verde oscuro -->
+  <g transform="translate(450, 480)">
+    <text x="0" y="0" 
+          font-family="Arial, sans-serif" 
+          font-size="48" 
+          font-weight="bold" 
+          fill="#2D5016" 
+          text-anchor="start">ENERGÍA VERDE</text>
+  </g>
+  
+  <!-- Hojas decorativas -->
+  <g transform="translate(900, 460)">
+    <!-- Hoja 1 -->
+    <path d="M0 20 C10 10 20 0 30 10 C25 15 15 25 0 20 Z" 
+          fill="#2D5016"/>
+    <!-- Hoja 2 -->
+    <path d="M35 25 C45 15 55 5 65 15 C60 20 50 30 35 25 Z" 
+          fill="#2D5016"/>
+  </g>
+</svg>
