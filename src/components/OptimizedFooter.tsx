@@ -104,8 +104,8 @@ const OptimizedFooter = () => {
                   <div>
                     <p className="text-gray-300 text-sm mb-1">Dirección:</p>
                     <span className="text-gray-200 leading-relaxed text-base">
-                      POLÍGONO CAMPOLLANO - CALLE A, 7<br />
-                      02006, ALBACETE (ALBACETE)<br />
+                      CALLE ANDARELLA, 2<br />
+                      46950, VALENCIA<br />
                       ESPAÑA
                     </span>
                   </div>
